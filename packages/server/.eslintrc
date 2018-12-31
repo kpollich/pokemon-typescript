@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "warn",
+    "no-undef": "error"
+  },
+  "extends": ["prettier"]
+}

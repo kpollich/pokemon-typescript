@@ -1,0 +1,23 @@
+{
+  "name": "@pokemon-typescript/server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "test": "yarn lint && jest",
+    "format": "prettier \"src/**/*.ts\" --write",
+    "lint": "tslint \"src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.2.1",
+    "apollo-server": "^2.2.5",
+    "graphql": "^14.0.2",
+    "lodash": "^4.17.11",
+    "merge-graphql-schemas": "^1.5.8"
+  }
+}
